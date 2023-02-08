@@ -1,0 +1,154 @@
+.cv{
+    height: 600px;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;    
+}
+
+.cv img{
+    width: auto;
+    height: 300px;
+    transition: 0.5s;
+    position: relative;
+    object-fit: scale-down;
+    box-sizing: content-box;
+    margin: 80px;
+}
+
+.cv img:hover{
+    scale: 1.2;
+    padding-left: 3%;
+    transition: 0.5s;
+    position: relative;
+}
+
+
+
+.contacto{
+    display: inline-block;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.contacto img{
+    display: inline-flex;
+    object-fit:scale-down;
+    align-items: center;
+    margin: 5vw;
+    width: 10%;
+    height: 20%;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.contacto img:hover{
+    transform: scale(1.1);
+}
+
+
+.competencias{
+    position: relative;
+    display: inline-block;
+    height: 80em;
+}
+
+.competencias img{
+    position: relative;
+    display: inline-flex;
+    object-fit:fill;
+    height: 25%;
+    width: 15%;
+    margin-left: 6vw;
+    padding-top: 2vh;
+    transition: .5s;
+}
+
+.competencias img:hover{
+    scale: 1.2;
+    transition: .5s;
+    opacity: 75%;
+}
+
+
+
+.repo{
+    display: inline-flex;
+    position: relative;
+    margin-left: 40px;
+    margin-bottom: 30px;
+    align-items: center;
+    justify-content: center;
+}
+
+.repo__img{
+    display: block;
+    width: 700px;
+    border-radius: 20px;
+}
+
+.repo__overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0,0, 0.5);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    opacity: 0;
+    transition: opacity .5s;
+    color: #fff;
+    
+}
+
+.repo__overlay > *{
+    transform: translateY(20px);
+    transition: 1s;
+}
+
+.repo__overlay:hover{
+    opacity: 1;
+}
+
+.repo__overlay:hover > *{
+    transform: translateY(0);
+}
+
+.repo__title{
+font-size: 2em;
+font-family: 'Oswald', sans-serif;
+color: #FFB300;
+}
+
+.proyectos {
+    position: relative;
+    display: inline-block;
+    margin: 50px;
+    text-align: center;
+}
+
+.proyectos .repo__btn{
+    display: inline-flex;
+    position: relative;
+    margin: 80px 90px;
+    transition: all .5s ease-in-out;
+}
+
+
+.proyectos .repo__btn a img{
+    display: inline-flex;
+    margin: 5px 80px;
+    width: 28%;
+    
+}
+
+.pie{
+    height: 190px;
+    margin-top: 100px;
+}
+
+

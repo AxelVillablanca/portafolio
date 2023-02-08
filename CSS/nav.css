@@ -1,0 +1,39 @@
+.cabeza{
+    height: 20%;
+    background-color: #181818;
+}
+
+.cabeza nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding-top: 20px;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+
+.cabeza nav ul li{
+    list-style: none;
+    display: inline-block;
+    padding: 20px 50px;
+    font-size: 2em;
+}
+
+.cabeza nav ul li a{
+    color: #FFB300;
+    text-decoration: none;
+    font-family: 'Oswald', sans-serif;
+}
+
+.cabeza nav ul li a:hover{
+    color : whitesmoke;
+    transition: 0.5s;
+}
+
+@media screen and (max-width: 600px) {
+    .cabeza a:not(:first-child) {display: none;}
+    .cabeza a.icon {
+      float: right;
+      display: block;
+    }
+  }
